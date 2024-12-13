@@ -9,6 +9,11 @@ requirements = []
 path = 'contracts/dispute-resolution.clar'
 clarity_version = 2
 epoch = 2.5
+
+[contracts.platform-integration]
+path = 'contracts/platform-integration.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
 passes = ['check_checker']
 
