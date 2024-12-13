@@ -1,0 +1,29 @@
+[project]
+name = 'Freelance-Escrow-Platform'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.dispute-resolution]
+path = 'contracts/dispute-resolution.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.platform-integration]
+path = 'contracts/platform-integration.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.reputation]
+path = 'contracts/reputation.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
